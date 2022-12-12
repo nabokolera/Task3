@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table</title>
 </head>
 <body>
-    
+ <table border="1" bordercolor="black" width="500" height="200"
+    <thead>
+    <tr> 
+         <th colspan="4" bgcolor="blue"> MY FIRST TABLE </th> 
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <colgroup> 
+        <col span="3" style="background-color:yellow">
+        </colgroup>
+        <td bgcolor="blue"><center>First cell</center></td>
+        <td bgcolor="blue"><center>Second cell</center></td>
+        <td colspan="2" rowspan="3"><center>6 cells mergered together</center></td>
+    </tr>
+    <tr>
+        <td colspan="2"><center>2 cells merged together</center> </td>
+    </tr>
+    <tr>
+        <td><center>1st cell<br>3rd row</center></td>
+        <td><center>2nd cell<br>3rd row</center></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4"><center>Do you like table?</center></td>
+    </tr>
+    </tfoot>
+ </table>   
 </body>
 </html>
